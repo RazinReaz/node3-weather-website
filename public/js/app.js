@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) =>{
     e.preventDefault()
 
     const location = searchElement.value
-    const urlTofetchForecast = 'http://localhost:3000/weather?address=' + location
+    const urlTofetchForecast = '/weather?address=' + location
     
     messageOne.textContent = 'Loading weather of ' + location
     messageTwo.textContent = ''
