@@ -1,5 +1,3 @@
-console.log('js file is loaded')
-
 const weatherForm = document.querySelector('form')
 const searchElement = document.querySelector('input')
 const messageOne = document.querySelector('#message-1') //the <p> element in index.hbs with id message-1
