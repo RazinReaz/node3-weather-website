@@ -1,0 +1,46 @@
+setTimeout (function, milliseconds) executes the function after the given ms
+
+notes.forEach((note) => {
+        console.log(note.title + " -> " + note.body)
+    });
+const notesToKeep = notes.filter( (note) => note.title !== titleToRemove)
+
+
+npm request : module used to make http requests
+request(url_object, callback_function(error, response)) : 
+
+json: true :::: automatically parses the response from json to object
+response.body : the part of the returned object with all valid info
+
+!!!!!!!!IT IS VERY USEFUL AND IMPORTANT TO SEE THE DOCUMENTATION OF THE API!!!!!!!!
+
+error handling : have to check what the json returns from the api request if there is an error in request
+
+const { attribute : new-name, ....} = object-name
+
+(obj1, {obj2.attribute1, obj2.attribute2}) //breaking an object in the argument line of the function
+
+console.log(__dirname)//provides path to the folder which has app.js file
+console.log(__filename)//provide path to the app.js file itself
+
+const path = require('path')
+path.join(__dirname, '../public')
+
+<img src>
+<script src>
+
+handlebars module to load partial html files for all pages, like 1 header for all pages, 1 footer for all pages
+res.render( 'hbs-file-name', <an-object-that-the-hbs-file-can-access> )
+how does hbs access the object?
+{{attribute}}
+
+app.set('view engine','hbs') //used to set up hbs library, useful to maintain the html files
+app.set('views', viewsPath) //looks for the hbs files in the viewsPath
+hbs.registerPartials(partialsPath) //used to set up partials
+
+header partial
+<div>
+    <a href="/">Weather</a>
+    <a href="/about">About</a>
+    <a href="/help"> Help</a>
+</div>
