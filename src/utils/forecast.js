@@ -12,7 +12,8 @@ const forecast = (latitude, longitude, callback) => {
         }
         else{
             const {temp, pressure, humidity} = body.main
-            callback(undefined, 'It is ' + (temp-273).toFixed(2) + ' degree celcius, the pressure is ' + (pressure/1013).toFixed(3) + ' atm and the humidity is ' + humidity + '%')
+            const description = body.weather[0].main
+            callback(undefined, description + '. It is ' + (temp-273).toFixed(2) + ' degree celcius, the pressure is ' + (pressure/1013).toFixed(3) + ' atm and the humidity is ' + humidity + '%')
         }
     })
 }
